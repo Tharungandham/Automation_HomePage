@@ -6,6 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features="src/test/resources/features",
         glue={"stepdefinations"},
         plugin={"pretty","json:target/cucumber-reports/report.json"},
+        tags = "@Smoke",
         monochrome = true
         )
 
