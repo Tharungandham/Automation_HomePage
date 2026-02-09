@@ -1,8 +1,8 @@
 pipeline{
     agent any
     tools{
-        maven:'mvn'
-        java:'java'
+        maven 'mvn'
+        java 'java'
     }
     parameters{
         choice(name:'BROWSER',choices:['chrome','Edge','safari'],description:'Browser Selection')
