@@ -4,7 +4,7 @@ pipeline{
         maven:'Maven'
         java:'JDK21'
     }
-    Parameters{
+    parameters{
         choice(name:'BROWSER',choices:['chrome','Edge','safari'],description:'Browser Selection')
         choice(name:'TAGS',choices:['@smoke','@regression','@sanity'],description: 'Cucumber tag selection')
         choice(name: 'ENV',choices: ['qa','Uat'])
